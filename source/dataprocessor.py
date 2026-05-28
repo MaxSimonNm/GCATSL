@@ -49,7 +49,7 @@ def generate_test_data(args):
     reorder = np.arange(labels.shape[0])
     np.random.shuffle(reorder)
 
-    cv_num = args.n_folds
+    cv_num = args.n_fold
     order = div_list(reorder.tolist(),cv_num)
     for i in range(cv_num):
         print("cross_validation:", '%01d' % (i))
@@ -62,7 +62,7 @@ def generate_global_interaction_matrix(args, train_arr, cv):
     data_path = args.input_dir
     path_adj = os.path.normpath(data_path + 'adj.txt')
     labels = np.loadtxt(path_adj)
-    num_nodes = args.n_nodes
+    num_nodes = args.n_node
     np.random.shuffle(train_arr)
        
     M = sp.csr_matrix((labels[train_arr,2],(labels[train_arr,0]-1, labels[train_arr,1]-1)),shape=(num_nodes, num_nodes)).toarray()

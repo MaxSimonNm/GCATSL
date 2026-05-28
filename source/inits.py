@@ -62,8 +62,8 @@ def load_data(train_arr, test_arr, cv, args, labels):
     interaction_global = interaction_global + np.eye(interaction_global.shape[0])
     interaction_global = sp.csr_matrix(interaction_global)
     
-    interaction_local_list = [interaction_local, interaction_local, interaction_local]
-    interaction_global_list = [interaction_global, interaction_global, interaction_global]
+    interaction_local_list = [interaction_local for _ in range(args.n_feature)]
+    interaction_global_list = [interaction_global for _ in range(args.n_feature)]
     
     return interaction_local_list, features_list, logits_train, logits_test, train_mask, test_mask, interaction_global_list 
 

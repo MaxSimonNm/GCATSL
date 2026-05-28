@@ -1,0 +1,15 @@
+# Python generated files
+__pycache__/
+*.py[cod]
+
+# GCATSL generated benchmark outputs
+output/log.txt
+output/test_result_*.txt
+runs/
+
+# Extracted toy-data global matrices are regenerated from the archived RAR.
+data/toy_examples/interaction_global_*.txt
+
+# Recovered/downloaded source artifacts used to build mappings.
+# Keep regeneration instructions and derived mapping tables in version control.
+external/

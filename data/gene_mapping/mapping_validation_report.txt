@@ -1,0 +1,15 @@
+GCATSL gene mapping validation
+source_xlsx=external/git_history_data/Human_SL_SynLethDB.xlsx
+adj_path=data/toy_examples/adj.txt
+source_rows=19669
+adj_rows=19668
+mapping_rows=6375
+min_node_id=1
+max_node_id=6375
+unique_node_ids=6375
+unique_gene_symbols=6375
+unordered_source_pairs=19668
+unordered_adj_pairs=19668
+unordered_pair_sets_identical=True
+mapping_path=data/gene_mapping/gcatsl_node_gene_mapping.tsv
+pairs_path=data/gene_mapping/gcatsl_sl_pairs_with_symbols.tsv
