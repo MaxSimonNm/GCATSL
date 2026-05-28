@@ -8,7 +8,7 @@ Our Software and test data have been archived at the dedicated repository of Zen
 
 GCATSL is a deep learning model that can be used for SL prediction. As shown in the following flowchart (a), GCATSL first learns representations for nodes based on different feature graphs together with a known SL interaction graph, and then uses the learned node representations to reconstruct SL interaction matrix for SL prediction. 
 
-![Workflow](https://raw.githubusercontent.com/longyahui/GCATSL/master/flowchart.jpg)
+![Workflow](flowchart.jpg)
 # Installation
 GCATSL is implemented with Tensorflow library. For the detail instruction of installing Tensorflow, see the [guidence](https://www.tensorflow.org/install) on official website of Tensorflow.
 
